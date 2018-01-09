@@ -1,0 +1,20 @@
+.input {
+	font-size: 22px;
+	padding: 5px 10px;
+	border: none;
+}
+
+.input-form {
+	width: 90%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.input-text {
+	width: 80%;
+}
+
+.input-submit {
+	background: #0385ba;
+	color: #ddd;
+}

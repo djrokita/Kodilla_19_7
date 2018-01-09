@@ -3,12 +3,12 @@ import React from 'react'
 const CommentForm = ({ text }) => {
 	let commentText = '';
 	return (
-		<form onSubmit={(event) => {
+		<form className='input-form' onSubmit={(event) => {
 			text(commentText);
 			event.preventDefault();
 		}}>
-			<input onChange={e => commentText = e.target.value} />
-			<input type='submit' value='Submit' />
+			<input className='input input-text' onChange={e => commentText = e.target.value} />
+			<input className='input input-submit' type='submit' value='Submit' />
 		</form>
 	);
 }

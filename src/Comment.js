@@ -2,12 +2,14 @@ import React from 'react';
 
 const Comment = ({text, votes, id, voteUp, voteDown, deleteComment, edit}) => {
 	return (
-		<li>
-			{text} <span>votes: {votes}</span>
-			<button onClick={() => voteUp(id)}>Thumb up</button>
-			<button onClick={() => voteDown(id)}>Thumb down</button>
-			<button onClick={() => deleteComment(id)}>X</button>
-			<button onClick={() => edit(text, id)}>Edit</button>
+		<li className='item'>
+			{text}
+			<div>
+				<span className='counter'>votes: {votes}</span>
+				<button className='btn btn-up' onClick={() => voteUp(id)}>up</button>
+				<button className='btn btn-down' onClick={() => voteDown(id)}>down</button>
+				<button className='btn btn-del' onClick={() => deleteComment(id)}>X</button>
+			</div>
 		</li>
 	);
 };
