@@ -1,6 +1,6 @@
 import { connect } from 'react-redux';
 import Comment from './Comment';
-import { getThumbUp, getThumbDown, removeComment, editComment } from './actions';
+import { getThumbUp, getThumbDown, removeComment } from './actions';
 import './Comment.css';
 
 const mapDispatchToProps = dispatch => ({

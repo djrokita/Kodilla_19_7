@@ -1,11 +1,11 @@
-import React, { Component } from 'react'
-import CommentsListContainer from './CommentsListContainer.js'
-import CommentForm from './CommentFormContainer'
+import React, { Component } from "react";
+import CommentsListContainer from "./CommentsListContainer.js";
+import CommentForm from "./CommentFormContainer";
 
 const App = () => {
   return (
     <div>
-    	<h1>Leave Your comment</h1>
+      <h1>Leave Your comment</h1>
       <CommentForm />
       <CommentsListContainer />
     </div>
